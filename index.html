@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/loader.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <span class="logo">✦ Small Fry's Pic Finder</span>
+        <form class="search-form" id="search-form">
+          <div class="input-wrap">
+            <input
+              class="search-input"
+              type="text"
+              name="query"
+              autocomplete="off"
+              placeholder="Search images..."
+            />
+          </div>
+          <button class="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <ul class="gallery" id="gallery"></ul>
+
+      <div class="bottom-wrap">
+        <button class="load-more-btn" id="load-more" hidden>Load more</button>
+        <div class="loader-wrap" id="loader" hidden>
+          <div class="loader"></div>
+          <p class="loader-text">Loading images, please wait…</p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
